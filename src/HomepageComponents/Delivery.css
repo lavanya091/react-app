@@ -1,0 +1,53 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+}
+
+.childdiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.childdiv > .child1, .child2, .child3 {
+    width: 30%;
+    text-align: center; 
+}
+
+.child1 > img, .child2 > img, .child3 > img {
+    width: 70%;
+}
+
+.child3 > img {
+    border-radius: 50%;
+}
+
+.childdiv p {
+    font-size: 1.2rem;
+    margin-top: 10px; 
+    color: #333; 
+}
+
+.btns {
+    padding: 15px 30px; 
+    color: white; 
+    font-weight: bold;
+    background-color: #ff9900; 
+    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.2);
+    border: none; 
+    cursor: pointer;
+    margin-top: 20px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.1s; 
+}
+
+.btns:hover {
+    background-color: #e68a00;
+    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.3); 
+    transform: translateY(-2px); 
+}
