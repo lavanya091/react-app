@@ -1,0 +1,56 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 0 1rem;
+  }
+  
+  .footer-section h3 {
+    margin-top: 0;
+  }
+  
+  .footer-section p, .footer-section ul, .footer-section input, .footer-section button {
+    margin: 0.5rem 0;
+  }
+  
+  .footer-section .social-links a {
+    color: #fff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+  }
+  
+  .footer-section .social-links a i {
+    font-size: 1.5rem;
+  }
+  
+  .footer-section .instagram-images {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section .instagram-images div {
+    width: 50px;
+    height: 50px;
+    margin: 0.5rem;
+    background-color: #ccc;
+  }
+  
+  .footer-section input {
+    padding: 0.5rem;
+    width: calc(100% - 1rem);
+  }
+  
+  .footer-section button {
+    padding: 0.5rem 1rem;
+    background-color: #e3342f;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
