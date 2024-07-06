@@ -1,0 +1,212 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333; 
+    padding: 10px; 
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+   
+  }
+  nav ul li{
+    margin:0 15px;
+    display: flex;
+    align-items: center;
+  }
+  nav ul li .nav-link{
+    color: white;
+    /* font-size: 10px; */
+    text-decoration: none;
+    font-weight: bold;
+    font-size:25px;
+  }
+  nav ul li .nav-link1{
+    /* font-size: 10px; */
+    text-decoration: none;
+    font-weight: bold;
+    font-size:20px;
+  }
+  nav ul li .btn{
+    color: white;
+  }
+  nav ul li .btn1{
+    color: black;
+  }
+  .App{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-image:url('./background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    position: relative;
+    box-sizing: border-box;
+    /* background-attachment: fixed; */
+    }
+    .App::before{
+      content:'';
+      position: absolute;
+      background-color: rgba(0,0,0,0.4);
+      top:0px;
+      left:0;
+      width:100%;
+      height:100%;
+      z-index:1;
+    }
+  .content{
+    position: relative;
+    color:white;
+    border: 5px solid black;
+    border-radius: 10px;
+    max-width: 50%;
+    height:auto;
+    margin-top: -50px;
+    margin-left: 5%;
+    padding:30px;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index:2;
+    
+  }
+  .content h1{
+    /* font-size: 2.5rem; */
+    padding-top: 15px;
+    line-height: 1.8;
+    margin-top: -49px;
+    
+  }
+  .content p{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    padding:10px 20px;
+  }
+  .learn-more{
+    padding: 10px;
+    border-radius: 5%;
+    background-color: #ffd700; 
+    border:none;
+    font-weight:bold;
+    color: black;
+    margin:10px;
+    margin-top:20px;
+  }
+  .learn-more:hover{
+     background-color: #ffa500;
+    color: white;
+  }
+  .transparent-button{
+    color: white;
+    background-color: transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  }
+  .transparent-button1 {
+    color: black;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Add transition for color change */
+  }
+  .transparent-button:hover {
+    color: goldenrod; /* Change button text color on hover */
+  }
+  
+  .transparent-button1:hover {
+    color: lightblue; /* Change button text color on hover */
+  }
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    .content {
+      max-width: 90%;
+      padding: 20px;
+    }
+  
+    .content h1 {
+      font-size: 2rem;
+    }
+  
+    .content p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and down) */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    .content {
+      max-width: 80%;
+      padding: 25px;
+    }
+  
+    .content h1 {
+      font-size: 1rem;
+    }
+  
+    .content p {
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .content {
+      max-width: 50%;
+      padding: 30px;
+    }
+  
+    .content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .content p {
+      font-size: 1.2rem;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
